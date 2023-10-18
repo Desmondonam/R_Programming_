@@ -35,8 +35,17 @@ lower <- qnorm(0.05, 20, 10)
 c(lower, upper)
 
 ### Poison Distribution 
+lower<-qpois(0.001, lambda=2.5)
+upper<-qpois(0.999, lambda=2,5)
+n<-seq(lower,upper,1)
+q<-seq(0.001,0.999,0.001)
+dPoisson25 <- data.frame(N=n, 
+                         Density=dpois(n, lambda=2.5),
+                         Distribution=ppois(n, lambda=2.5))  
+qPoisson25 <- data.frame(Q=q, Quantile=qpois(q, lambda=2.5))  
+head(dPoisson25)
 
-
+head(qPoisson25)
 
 
 
