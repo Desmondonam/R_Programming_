@@ -11,3 +11,7 @@
 ### Standard Normal Quantiles 
 ![Alt text](image-3.png)
 
+##  Poisson Distribution Functions, λ = 2.5
+
+![Alt text](image-4.png)
+
