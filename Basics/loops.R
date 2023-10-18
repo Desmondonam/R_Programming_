@@ -24,7 +24,7 @@ if (b > a) {
   print("a and b are equal")
 }
 
-# Else if 
+# Else if statement 
 
 # Nested if else statement
 a <- 200
