@@ -21,8 +21,9 @@ stratified_sample <- data %>% group_by(group) %>% sample_n(size = 10)
 # In systematic sampling, you select every nth item from the population.
 # You can use indexing and sequence functions in R to implement systematic sampling. 
 # Select every 5th item from a vector x
+x
 systematic_sample <- x[seq(5, length(x), by = 5)]
-
+systematic_sample
 ## 4. Cluster Sampling:
 
 #Cluster sampling divides the population into clusters and randomly selects some clusters for the sample.

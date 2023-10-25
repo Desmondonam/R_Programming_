@@ -41,6 +41,25 @@ plot(AirPassengers,type="l")  #Simple Line Plot
 barplot(iris$Petal.Length) #Creating simple Bar Graph
 barplot(iris$Sepal.Length,col  = brewer.pal(3,"Set1"))
 barplot(table(iris$Species,iris$Sepal.Length),col  = brewer.pal(3,"Set1")) #Stacked Plot
+'''
+Bar chart has got these given parameters
+H - matrix or the vector containing the numeric
+xlab - x axis label
+ylab- y axix label
+main - title
+names.arg - vector of the names of each bar
+col - color 
+
+'''
+## For example 
+H <- c(7, 12, 28, 3, 83)
+
+png(file = "barchart.png")
+
+#plot the bar chat
+barplot(H)
+# save the file 
+dev.off()
 
 
 ## Box Plots
@@ -82,6 +101,34 @@ m <- leaflet() %>%
   addTiles() %>%  # Add default OpenStreetMap map tiles
   addMarkers(lng=77.2310, lat=28.6560, popup="The delicious food of chandni chowk")
 m  # Print the map
+
+
+## managing the plot parameters in R
+# exampple data
+x <- 1:5
+y <- c(2, 4, 3, 6, 5)
+
+# create a simple scatter plot
+plot(x, y, 
+     type = "b",
+     main = "Scatter plot Example",
+     xlab = "X-axis label",
+     ylab = "Y-Axis label",
+     col = "blue",
+     pch = 3,
+     lwd = 2
+)
+
+# managing plot parameters usign the ggplot2
+
+library(ggplot2)
+
+
+
+
+
+
+
 
 
 
